@@ -1,0 +1,1 @@
+heimu=()=>{if(-1!==window.location.href.indexOf("posts")){var e=document.querySelectorAll("s,del");for(i=0;i<e.length;i++)"noheimu"!==e[i].className&&(e[i].title="你知道的太多了",e[i].setAttribute("data-toggle","tooltip"))}},document.addEventListener("pjax:complete",heimu),document.addEventListener("load",heimu);

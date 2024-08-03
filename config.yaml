@@ -1,0 +1,21 @@
+name: ClientWorker 
+catch_rules:
+  - rule: _
+    transform_rules:
+      - search: ^https:\/npm.elemecdn.com\/
+        replace: 
+          - _
+          - https://cdn2.chuqis.com/
+          - https://jsd.onmicrosoft.cn/npm/
+          - https://unpkg.zhimg.com/
+          - https://unpkg.com/
+          - https://gcore.jsdelivr.net/npm/
+          - https://fastly.jsdelivr.net/npm/
+        action: fetch
+        fetch:
+          preflight: false
+          engine: parallel
+      - search: _ 
+        action: fetch
+        fetch:
+          engine: fetch
