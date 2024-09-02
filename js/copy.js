@@ -1,0 +1,1 @@
+document.oncopy=function(){Snackbar.show({text:"复制成功,如转载请注明出处！",pos:"top-right",onActionClick:function(n){window.open("/license")},actionText:"查看博客声明"})},document.onkeydown=function(n){123==(n=n||window.event).keyCode&&Snackbar.show({text:"已打开开发者模式，扒源请谨记MIT协议！",pos:"top-right",onActionClick:function(n){window.open("/license/")},actionText:"查看博客声明"})};
