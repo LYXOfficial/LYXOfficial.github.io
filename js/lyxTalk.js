@@ -1,0 +1,1 @@
+let lyxTalk={init:function(n,e,t,i){AV.init({appId:n,appKey:e,serverURL:t});new AV.Query("content").find().then((n=>{console.log(n)}))}};
